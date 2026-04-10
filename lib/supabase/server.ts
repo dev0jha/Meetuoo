@@ -1,8 +1,7 @@
+import { createServerClient } from "@supabase/ssr";
 import { cookies } from "next/headers";
 
-import { createServerClient } from "@supabase/ssr";
-
-export async function createClient() {
+export async function getSupabaseServerClient() {
   const cookieStore = await cookies();
 
   return createServerClient(
@@ -19,7 +18,8 @@ export async function createClient() {
               cookieStore.set(name, value, options)
             );
           } catch {
-            // Server Component — ignore cookie write errors
+            // setAll called from a Server Component — can be ignored
+            // if middleware is refreshing sessions
           }
         },
       },
