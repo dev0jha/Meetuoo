@@ -44,9 +44,21 @@ export const Hero = () => {
           </svg>
         </div>
 
-        <h1 className="text-8xl md:text-[12rem] font-bold tracking-tighter text-white max-w-4xl mx-auto leading-[0.8] mb-8 font-display uppercase italic text-center">
-          MeetUOo
-        </h1>
+        <div className="relative inline-block group">
+          <div className="absolute -top-12 -left-12 md:-top-20 md:-left-20 w-24 h-24 md:w-40 md:h-40 opacity-10 pointer-events-none transition-all duration-700 group-hover:opacity-20 group-hover:scale-110">
+            <svg viewBox="0 0 1024 1024" className="w-full h-full" version="1.1" xmlns="http://www.w3.org/2000/svg">
+              <g id="SVGRepo_bgCarrier" strokeWidth="0"></g>
+              <g id="SVGRepo_tracerCarrier" strokeLinecap="round" strokeLinejoin="round"></g>
+              <g id="SVGRepo_iconCarrier">
+                <path d="M832 384l8 1.6-1.6 8 1.6 3.2-4.8 3.2-44.8 161.6-16-4.8 40-147.2-260.8 144-158.4 284.8-11.2-6.4-6.4 6.4-176-176 11.2-11.2 163.2 163.2 147.2-265.6-294.4-297.6 11.2-11.2v-8h9.6l3.2-3.2 3.2 3.2L664 208l1.6 16-395.2 22.4 278.4 278.4 276.8-153.6 6.4 12.8z" fill="#050D42"></path>
+                <path d="M896 384c0 35.2-28.8 64-64 64s-64-28.8-64-64 28.8-64 64-64 64 28.8 64 64z m-656-32c-62.4 0-112-49.6-112-112s49.6-112 112-112 112 49.6 112 112-49.6 112-112 112z m304 336c-80 0-144-64-144-144s64-144 144-144 144 64 144 144-64 144-144 144z m-224 144c0-35.2 28.8-64 64-64s64 28.8 64 64-28.8 64-64 64-64-28.8-64-64z m-144-176c0-17.6 14.4-32 32-32s32 14.4 32 32-14.4 32-32 32-32-14.4-32-32z m448-440c0-22.4 17.6-40 40-40s40 17.6 40 40-17.6 40-40 40-40-17.6-40-40zM736 560c0-27.2 20.8-48 48-48s48 20.8 48 48-20.8 48-48 48-48-20.8-48-48z" fill="#2F4BFF"></path>
+              </g>
+            </svg>
+          </div>
+          <h1 className="text-8xl md:text-[12rem] font-bold tracking-tighter text-white max-w-4xl mx-auto leading-[0.8] mb-8 font-display uppercase italic text-center">
+            MeetUOo
+          </h1>
+        </div>
 
         <p className="text-lg md:text-xl text-neutral-400 max-w-2xl mx-auto leading-relaxed mb-12 font-medium text-center">
           Save hours of meeting analysis with clean, ready-to-use AI insights 
