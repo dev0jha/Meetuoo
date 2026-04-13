@@ -35,7 +35,7 @@ export default function RootLayout({
   return (
     <html
       lang="en"
-      className={cn("h-full", "antialiased", "selection-accent", poppins.variable, ibmPlexMono.variable, "font-sans", geist.variable)}
+      className={cn("dark", "h-full", "antialiased", "selection-accent", poppins.variable, ibmPlexMono.variable, "font-sans", geist.variable)}
     >
       <body className="flex min-h-full flex-col bg-[#121212] overflow-x-hidden">
         <AuthProvider>{children}</AuthProvider>
